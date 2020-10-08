@@ -1,0 +1,191 @@
+@media screen and (orientation: landscape)and (min-width: 539px) and (max-width: 1920px) {
+    html, ul#leMenu li a > * {
+
+    }
+
+    html {
+        font-family: "Open Sans", "sans-serif";
+        background-image: url(../asset/images/dev02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh
+    }
+    #burger,form {
+        position: fixed
+    }
+    #burger {
+        z-index: 100;
+        top: 8px;
+        left: 8px;
+        height: 64px;
+        width: 64px;
+        background-color: #1b202b;
+        border: 5px solid #fff;
+        margin: 8px;
+        box-shadow: 1px 1px 5px 0 rgba(0,0,0,.75);
+        border-radius: 64px
+    }
+
+    div#burger>span {
+        display: block;
+        height: 8px;
+        background-color: #f1f7ed;
+        border-radius: 2px;
+        margin: 8px 12px
+    }
+
+
+
+    main {
+        top: 0
+    }
+
+    #leMenu {
+        left: 100%;
+        top: 15vh;
+        border-radius: 10% 0 0 10%;
+    }
+#leMenu *{
+    width: 15vw;
+    height: auto;
+}
+    ul#leMenu{
+        list-style-type: none;
+        overflow: hidden;
+
+    }
+
+    ul#leMenu li a {
+        display: block;
+        color: #f7fff7;
+        text-align: left;
+        font-size: 64px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #000;
+        margin-bottom: 2%;
+    }
+
+
+    h1,h2,h3,h4 {
+        color: var(--color-mint-cream);
+        font-family: 'Limelight', sans-serif;
+        text-align: center;
+        padding: 2%;
+    }
+
+
+
+    footer ul, ul#leMenu{
+        list-style-type: none
+    }
+
+    /*****************************/
+    .section-1{
+        height: 100vh;
+    }
+    .contenaire-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        padding: 6% 2%;
+        grid-column-gap: 0;
+        font-size: 4vh;
+    }
+
+    .item-grid-gauche {
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-shadow: #000 1px 1px 1px;
+        background-color: rgba(161, 67, 67, 0.8);
+        border-top: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .75);
+        border-radius: 25px 0 0 25px;
+    }
+
+    .item-grid-droite{
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-shadow: #000 1px 1px 1px;
+        background-color: rgba(27, 32, 43, 0.8);
+        border-top: 1px solid rgba(255, 255, 255, 0.8);
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
+        border-radius: 0 25px 25px 0;
+
+    }
+
+
+
+
+
+    #fermer {
+        background-color: #333a4d;
+        color: #f1f7ed;
+        margin: 0 2%
+    }
+
+    .desActiveForm {
+        display: none
+    }
+
+    .activeForm {
+        z-index: 10;
+        position: fixed;
+        top: 100px;
+        left: 20vw
+    }
+
+    form, form#contact {
+        text-shadow: 1px 1px 2px #000;
+        margin: 0 12% 12%
+    }
+
+    form#contact {
+        box-shadow: 0 0 49px 8px rgba(0, 0, 0, .75);
+        border-radius: 20px;
+        background-color: var(--color-bittersweet)
+    }
+
+    form {
+        width: 50vw;
+        height: 50vh;
+        background-color: #333a4d;
+        font-size: medium
+    }
+
+    form > * {
+        display: block;
+        width: 100%
+    }
+
+    #contact label, a:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 0 0 25px 25px;
+    }
+
+    fieldset {
+        background-color: #000
+    }
+
+    #contact label, button, input, input[type=checkbox] {
+        text-align: center
+    }
+
+    #contact label, button {
+        color: var(--color-mint-cream)
+    }
+
+    button {
+        background-color: #333a4d;
+        padding: 2%
+    }
+
+    footer {
+        background-color: var(--color-bittersweet-variante)
+    }
+
+    .item-footer {
+        flex: auto
+    }
+}
