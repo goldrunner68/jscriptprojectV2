@@ -1,14 +1,22 @@
-function animation(val) {
-    let sectionTag = document.querySelectorAll("section");
-    let itemGridGauche = document.querySelectorAll(".item-grid-gauche").item(val);
-    let itemGridDroite = document.querySelectorAll(".item-grid-droite").item(val);
-    let gaucheOffside = -(itemGridGauche.offsetWidth);// taille de l element complet
-    let droiteOffside = -(itemGridDroite.offsetWidth);// taille de l element complet
-    let inc = 0;
-    let id;
+let itemGridGauche;
+let itemGridDroite;
+let gaucheOffside;// taille de l element complet
+let droiteOffside;// taille de l element complet
+let inc;
+let id;
+
+
+function animation(val = 0) {
+
+    itemGridGauche = document.querySelectorAll(".item-grid-gauche").item(val);
+    itemGridDroite = document.querySelectorAll(".item-grid-droite").item(val);
+    gaucheOffside = -(itemGridGauche.offsetWidth);// taille de l element complet
+    droiteOffside = -(itemGridDroite.offsetWidth);// taille de l element complet
+
 //*********************************************
     function scroll(item) {
         id = setInterval(frame, 0);
+        inc = 0;
 
         function frame() {
             if ((gaucheOffside + inc) >= 0) {
@@ -27,4 +35,5 @@ function animation(val) {
     }
 
 }
-export{animation};
+
+export {animation};

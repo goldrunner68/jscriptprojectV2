@@ -1,12 +1,21 @@
+let val = 0;
+let itemGridGauche;
+let itemGridDroite;
+let gaucheOffside;// taille de l element complet
+let droiteOffside;// taille de l element complet
 
-function cacherItem(val) {
+function cacherItem() {
 
-    let itemGridGauche = document.querySelectorAll(".item-grid-gauche").item(val);
-    let itemGridDroite = document.querySelectorAll(".item-grid-droite").item(val);
-    let gaucheOffside = -(itemGridGauche.offsetWidth);// taille de l element complet
-    let droiteOffside = -(itemGridDroite.offsetWidth);// taille de l element complet
-    itemGridGauche.style.left = gaucheOffside + "px";//Hors ecran a gauche
-    itemGridDroite.style.right = droiteOffside + "px";//Hors ecran a droite
+        for (val;val<=2;val++){
+        itemGridGauche = document.querySelectorAll(".item-grid-gauche")[val];
+        itemGridDroite = document.querySelectorAll(".item-grid-droite")[val];
+        gaucheOffside = -(itemGridGauche.offsetWidth);
+        droiteOffside = -(itemGridDroite.offsetWidth);
+        itemGridGauche.style.left = gaucheOffside + "px";//Hors ecran a gauche
+        itemGridDroite.style.right = droiteOffside + "px";//Hors ecran a droite
+                console.log(val);
+}
 
 }
-export{cacherItem};
+
+export {cacherItem};
