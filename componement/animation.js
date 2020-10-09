@@ -11,6 +11,9 @@ let total;
 let index = 0;
 let elem;
 let id2;
+let un = false;
+let deux = false;
+let trois = false;
 function animation() {
 
     // detection du scanAllItem de la page web
@@ -18,14 +21,29 @@ function animation() {
     total = (winScroll * 100) / hauteur;//donne la valeur en pourcentage
     total = (total / 100);// arrondi le pourcentage en entier
     id2 = setInterval(function() {
-        if (window.scrollY !== vertical) {
-            vertical=window.scrollY;
-            if (index>=2){clearInterval(id2)}
-            index++;
-        scanAllItem(index-1);
-            console.log("window.scrollY="+index);
+        if (window.scrollY >= 0 && un !==true) {
+            scanAllItem(0);
+            un = true;
+            console.log("un "+window.scrollY)
+
 
         }
+        if (window.scrollY >=580 && deux !==true) {
+            scanAllItem(1);
+            deux = true;
+            console.log("deux "+window.scrollY)
+        }
+        if (window.scrollY >= 1300 && trois !==true) {
+
+            scanAllItem(2);
+
+            trois = true;
+            console.log("trois "+window.scrollY)
+
+
+        }
+
+
     }, 1000);
 
 
