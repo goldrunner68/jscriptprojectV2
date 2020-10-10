@@ -5,10 +5,29 @@
 
     html {
         font-family: "Open Sans", "sans-serif";
-        background-image: url(../asset/images/dev02.jpg);
+
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh
+        height: 100vh;
+
+    }
+    #section-a{
+        background-color: #1b202b;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #section-b{
+        background-color: #3c4357;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #section-c{
+        background-color: #4a536e;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
     }
     #burger,form {
         position: fixed
@@ -91,28 +110,25 @@
         height: 100vh;
         grid-column-gap: 0;
         font-size: 4vh;
+        overflow: hidden hidden;
     }
 
     .item-grid-gauche {
         position: relative;
+        left: -100%;
         grid-column: 1/2;
         grid-row: 1/2;
         text-shadow: #000 1px 1px 1px;
-        background-color: rgba(161, 67, 67, 0.8);
-        border-top: 1px solid rgba(255, 255, 255, 0.8);
-        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .75);
-        border-radius: 25px 0 0 25px;
+
     }
 
     .item-grid-droite{
         position: relative;
+        right: -100%;
         grid-column: 2/3;
         grid-row: 1/2;
         text-shadow: #000 1px 1px 1px;
-        background-color: rgba(27, 32, 43, 0.8);
-        border-top: 1px solid rgba(255, 255, 255, 0.8);
-        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.75);
-        border-radius: 0 25px 25px 0;
+
 
     }
 

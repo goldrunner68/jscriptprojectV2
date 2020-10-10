@@ -6,7 +6,7 @@ import * as animation from "./componement/animation.js";
 import * as burger from "./componement/slideBurger.js";
 burger.slideBurger();
 
-cacherItem.cacherItem();//cache les item avant onload;
+//cacherItem.cacherItem();//cache les item avant onload;
 
 animation.animation();//fait apparaitre les items apres onload;
 
