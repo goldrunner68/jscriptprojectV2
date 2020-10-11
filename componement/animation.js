@@ -13,17 +13,17 @@ function animation() {
 
 
         if ((bool !== 0 && winScroll >= -1 && winScroll <= (maxHauteur / 3))) {
-            console.log(bool);
+
             scan(0);
 
         }
         if ((bool !== 1 && winScroll >= (maxHauteur / 3) && winScroll <= (maxHauteur / (2 / 3)))) {
-            console.log(bool);
+
             scan(1);
 
         }
         if ((bool !== 2 && winScroll >= (maxHauteur / (2 / 3)) && winScroll >= maxHauteur)) {
-            console.log(bool);
+
             scan(2);
 
         }
@@ -45,7 +45,8 @@ function animation() {
 
 
             } else {
-                inc += 10;
+                inc +=5;
+                console.log(inc);
                 itemGridGauche.style.left = -(100-inc) + "%";
                 itemGridDroite.style.right = -(100-inc) + "%";
 

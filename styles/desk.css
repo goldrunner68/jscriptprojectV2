@@ -4,27 +4,30 @@
     }
 
     html {
-        font-family: "Open Sans", "sans-serif";
 
-        background-size: cover;
-        background-repeat: no-repeat;
         height: 100vh;
 
     }
+#bg{
+background-color: rgba(255,255,255,1);
+
+}
+
     #section-a{
-        background-color: #1b202b;
+        background-image: url("../asset/background/dev02.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
+
     }
     #section-b{
-        background-color: #3c4357;
+        background-image: url("../asset/background/dev03.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
     }
     #section-c{
-        background-color: #4a536e;
+        background-image: url("../asset/background/code-1839406_1920.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -111,6 +114,10 @@
         grid-column-gap: 0;
         font-size: 4vh;
         overflow: hidden hidden;
+        margin: 0 12%;
+        background-color: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(15px);
+
     }
 
     .item-grid-gauche {
@@ -119,6 +126,7 @@
         grid-column: 1/2;
         grid-row: 1/2;
         text-shadow: #000 1px 1px 1px;
+
 
     }
 
