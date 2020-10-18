@@ -1,24 +1,26 @@
 /*Taille div fond*/
 :root {
-    --color-mid-green: #1a535c;
-    --color-mid-green-variante: #314f54;
-    --color-medium-turquoise: #4ecdc4;
-    --color-mint-cream: #f7fff7;
-    --color-bittersweet: #ff6b6b;
-    --color-bittersweet-variante: #a14343;
-    --color-naples-yellow: #ffe66d;
-    --color1: #1b202b;
-    --color2:#4a536e;
-    --color3:#3c4357;
-    --color4:#333a4d;
-    --color5:#444c5c;
 
+    --color1: #03071E;
+    --color2:#370617;
+    --color3:#6A040F;
+    --color4:#9D0208;
+    --color5:#D00000;
+    --color6: #DC2F02;
+    --color7:#E85D04;
+    --color8:#F48C06;
+    --color9:#FAA307;
+    --color10:#FFBA08;
+
+}
+.color7{
+    color:var(--color7);
 }
 
 * {
      text-decoration: none;
      box-sizing: border-box;
-     margin: 0;
+
  }
 nav {
 
@@ -40,56 +42,54 @@ nav img,ul.topnav li a {
     box-shadow: 0 0 14px 0 rgba(0,0,0,.75)
 }
 
-#home {
-    background-color: var(--color-mint-cream)
-}
 
-#boutonContact {
-    background-color: #ffe66d
-}
-
-#autre,footer {
-    background-color: var(--color-bittersweet-variante)
-}
-
-#linke {
-    background-color: var(--color-mint-cream)
-}
 /*****************************/
 .construction{
-    background-color: #ffe66d;
-    font-size: medium;
+    background-color: var(--color10);
+    color: var(--color4);
     font-family: "Open Sans", sans-serif;
-}
-p,h1,h2,h3{
-    color: var(--color-mint-cream);
-}
-
-.couleur-1{
-    background-color: hsla(190, 26%, 26%,50);
-
-}
-.couleur-2{
-    background-color: hsla(188, 56%, 23%,50);
-}
-.couleur-3{
-    background-color: hsla(190, 26%, 26%,50);
+    font-size: 2rem;
 }
 
 
-.line-1{
+span.line-1{
+    display: block;
     height: 2px;
-    background-color: var(--color-naples-yellow);
-    margin: 0;
+    width: 100%;
+    background-color: var(--color7);
+    margin: 1rem 0 1rem 0;
+
 }
-.contenaire-grid p {
-    min-height   : 100px;
-    margin       : 0 0 1.375rem;
+ p {
+
     overflow-wrap: break-word;
     text-align   : justify;
 }
 
 
+#section-a {
+    background-image: url("../asset/background/triple_v05_01.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+
+
+}
+
+#section-b {
+    background-image: url("../asset/background/triple_v05_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+#section-c {
+    background-image: url("../asset/background/triple_v05_03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
 
 /* */
 

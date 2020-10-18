@@ -36,8 +36,8 @@ function animation() {
 
         let inc = 0;
 
-        let itemGridGauche = document.querySelectorAll(".item-grid-gauche").item(val);
-        let itemGridDroite = document.querySelectorAll(".item-grid-droite").item(val);
+        let itemGridGauche = document.querySelectorAll(".gauche").item(val);
+        let itemGridDroite = document.querySelectorAll(".droite").item(val);
         let id = setInterval(()=>{//stage 2
             if (inc===100) {
 
