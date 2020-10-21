@@ -1,5 +1,5 @@
 
-let defilement = () => {
+export function defilement () {
     let image = 0  ;
 
     const data = '{"tableaux":['
@@ -29,4 +29,3 @@ setInterval(()=> {
    
 }, 4000);
 }
-export {defilement};

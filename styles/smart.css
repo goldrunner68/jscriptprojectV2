@@ -33,7 +33,7 @@ section{
         font-family: Roboto, sans-serif;
         font-weight: lighter;
         text-align: justify-all;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
     p{
         font-size: 2.5rem;
@@ -64,10 +64,10 @@ section{
 
 
     #leMenu{
-        left: 100%;
+        right: -80%;
         top: 25vh;
-        width: 100vw;
-        border-radius: 25vw;
+
+        border-radius: 25px 0 0 25px;
 
     }
     ul#leMenu{
@@ -133,64 +133,6 @@ section{
 
     }
 
-
-
-    .item-form {
-        flex: 1;
-        justify-items: stretch;
-        color: #f1f7ed
-    }
-
-    .desActiveForm {
-        display: none
-    }
-
-    .activeForm {
-        z-index: 10;
-        position: fixed;
-        top: 200px;
-        left: 0
-    }
-
-    form>* {
-        display: block;
-        width: 100vw;
-        font-size: xx-large;
-        padding: 0 2%
-    }
-
-    #fermer {
-        background-color: var(--color2);
-        color: #f1f7ed;
-        margin: 0 2%
-    }
-
-    form {
-        top: 33%;
-        background-color: #333a4d
-    }
-
-    a:hover,label {
-        background-color: #a14343
-    }
-
-    fieldset {
-        background-color: #000
-    }
-
-    button,input,input[type=checkbox],label {
-        text-align: center
-    }
-
-    button,label {
-        color: var(--color10)
-    }
-
-    button {
-        background-color: #333a4d;
-        padding: 2%
-    }
-
     footer * {
         list-style-type: none
     }
@@ -220,7 +162,7 @@ section{
 
         /*background-color: rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(2px);*/
-        justify-items: center;
+
         align-items: center;
 
     }
@@ -281,7 +223,7 @@ section{
         grid-column: 1/3;
         grid-row: 2/3;
         text-shadow: #000 1px 1px 1px;
-
+        padding-top: 1rem;
     }
     /*section b*/
     .item-grid-gauche-2>p{
@@ -357,12 +299,17 @@ section{
     .container-flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: center;
 
     }
     .item-flex {
         align-items: center;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .logo{
+
     }
 
 
