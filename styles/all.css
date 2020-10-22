@@ -60,36 +60,18 @@ span.line-1{
     margin: 1rem 0 1rem 0;
 
 }
- p {
 
-    overflow-wrap: break-word;
-    text-align   : justify;
+/*class animation slide*/
+.gauche {
+    position: relative;
+    left: -200%;
 }
 
-
-#section-a {
-    background-image: url("../asset/background/triple_v05_01.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-
-
+.droite {
+    position: relative;
+    right: -200%;
 }
 
-#section-b {
-    background-image: url("../asset/background/triple_v05_02.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-}
-
-#section-c {
-    background-image: url("../asset/background/triple_v05_03.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-}
 
 /* */
 

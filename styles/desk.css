@@ -2,22 +2,42 @@
     html, ul#leMenu li a > * {
 
     }
-*{
-    margin: 0;
-}
+
+    * {
+        margin: 0;
+    }
+
+    /******/
     html {
         font-family: Roboto, sans-serif;
         font-weight: lighter;
         color: #ffffff;
-        background-color: whitesmoke;
-        font-size: 100%;
+        background-color: var(--color1);
+        font-size: 16px;
 
     }
-
-
     main {
         top: 0;
         margin: 0;
+    }
+
+    #section-a {
+        background-image: url("../asset/background/triple_v05_01.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+
+    }
+    #section-b {
+        background: rgb(3,7,30);
+        background: linear-gradient(180deg, rgba(3,7,30,0.2) 0%, rgba(55,6,23,0.5) 66%, rgba(3,7,30,0.2) 100%);
+}
+
+    #section-c {
+        background-image: url("../asset/background/triple_v05_03.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+
     }
 
     #burger {
@@ -74,7 +94,6 @@
         margin-bottom: 2%;
     }
 
-
     h1 {
         font-weight: lighter;
         font-family: 'Limelight', sans-serif;
@@ -83,192 +102,169 @@
         font-size: 5rem;
         text-shadow: 2px 2px 2px #3c1801;
     }
-    h1>span{
+
+    h1 > span {
         font-size: 4rem;
         line-height: 3rem;
 
 
     }
+
     h2 {
         color: var(--color10);
-        font-family: Roboto, sans-serif;
+
         font-weight: lighter;
         text-align: justify-all;
         font-size: 2rem;
     }
-form {
-    z-index: 100;
-    background-color:#3c1801;
-    color: #f1f7ed;
-}
-h3{
-    color: #f1f7ed;
-}
+
+    h3 {
+        color: #f1f7ed;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
     footer ul, ul#leMenu {
         list-style-type: none
     }
 
     /*****************************/
-    section  {
-        border: 5px solid red;
-        min-height: 100vh;
-        padding: 6% 20% 6% 20%;
-    }
     /* imageMAX taille auto du contenaire*/
-    .item-flex>img{
+    .item-flex > img {
         padding: 0 12%;
     }
-    .maxImage{
+
+    .maxImage {
         height: 100%;
         width: 100%;
-        border:1px solid #1b202b;
     }
-    img{
+
+    img {
         max-width: 100%;
         max-height: 100%;
     }
-    .contenaire-grid {
+
+    .contenaire-grid-1,.contenaire-grid-2,.contenaire-grid-3{
         display: grid;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        overflow: hidden hidden;
+        /*background-color: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(2px);*/
+        justify-items: center;
+        align-items: center;
+        overflow-wrap: anywhere;
+        text-align: justify;
+        padding: 6% 20%;
+    }
+    .contenaire-grid-1 {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 2fr 1fr;
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-        overflow: hidden hidden;
-        /*background-color: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(2px);*/
-        justify-items: center;
-        align-items: center;
-
     }
+
     .contenaire-grid-2 {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-
-        overflow: hidden hidden;
-        justify-items: center;
-        align-items: center;
-        /*background-color: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(2px);*/
+        grid-column-gap: 0;
 
     }
+
     .contenaire-grid-3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-
-        overflow: hidden hidden;
-        justify-items: center;
-        align-items: center;
+        justify-items: stretch;
+        align-items: stretch;
         /*background-color: rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(2px);*/
+        font-size: 1.2rem;
+        text-align: left;
 
     }
+
     /*section a*/
-    .item-grid-gauche {
+    .item-grid-left-1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        align-self: center;/*axe haut bas*/
+        align-self: center; /*axe haut bas*/
+        /*justify-self: stretch;/*axe horiz*/
         text-shadow: #000 1px 1px 1px;
 
     }
 
-    .item-grid-droite {
+    .item-grid-right-1 {
         grid-column: 2/3;
         grid-row: 1/2;
         text-shadow: #000 1px 1px 1px;
+    }
 
-
-    }
-    .gauche{
-        position: relative;
-        left: -100%;
-    }
-    .droite{
-        position: relative;
-        right: -100%;
-    }
-    .item-grid-bottom {
-        align-self: center;/*axe haut bas*/
+    .item-grid-bottom-1 {
         grid-column: 1/3;
         grid-row: 2/3;
-        text-shadow: #000 1px 1px 1px;
+        align-self: center; /*axe verti*/
+        /*justify-self: stretch;/*axe horiz*/
 
     }
+
     /*grid 2 item*/
-    img#defilement{
+    img#roll-picture {
         height: 50%;
         width: auto;
     }
+
     /* section b */
-    .item-grid-gauche-2 {
+
+    .item-grid-left-2 {
         grid-column: 1/2;
         grid-row: 1/2;
-        text-shadow: #000 1px 1px 1px;
         font-size: 2rem;
-        text-align   : center;
+        text-align: right;
+        justify-self: stretch;
+        align-self: stretch;
+        background-color: var(--color8);
+        border-radius: 6px 0 0 6px;
     }
-    .item-grid-gauche-2>p{
-        text-align   : center;
+    #roll-text,#roll-picture{
+        padding: 2%;
+        text-shadow: #000 2px 1px 1px;
     }
 
-    .item-grid-droite-2 {
+
+    .item-grid-right-2 {
         grid-column: 2/3;
         grid-row: 1/2;
-        align-self: center;/*axe haut bas*/
-        justify-self: center;
-        text-shadow: #000 1px 1px 1px;
-
+        align-self: stretch; /*axe verti*/
+        /*justify-self: stretch;/*axe horiz*/
+        justify-self: stretch;
+        background-color: var(--color7);
+        border-radius: 0 6px 6px 0;
     }
 
-    .item-grid-bottom-2-a {
-        grid-column: 1/2;
+    .item-grid-bottom-2 {
+        grid-column: 1/3;
         grid-row: 2/3;
-        text-shadow: #000 1px 1px 1px;
-
+        align-self: center; /*axe verti*/
+        /*justify-self: stretch;/*axe horiz*/
     }
-    .item-grid-bottom-2-b {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        align-self: center;/*axe haut bas*/
-        text-shadow: #000 1px 1px 1px;
 
-    }
+
     /*section c*/
     .item-grid-gauche-3 {
         grid-column: 1/2;
         grid-row: 1/2;
-        text-shadow: #000 1px 1px 1px;
-
     }
 
 
     .item-grid-droite-3 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        align-self: center;/*axe haut bas*/
-        justify-self: center;
-        text-shadow: #000 1px 1px 1px;
-
-    }
-
-    .item-grid-bottom-3-a {
         grid-column: 1/2;
         grid-row: 2/3;
-        text-shadow: #000 1px 1px 1px;
-
+        align-self: center; /*axe verti*/
+        justify-self: stretch; /*axe horiz*/
     }
-    .item-grid-bottom-3-b {
-        grid-column: 2/3;
-        grid-row: 2/3;
-        align-self: center;/*axe haut bas*/
-        text-shadow: #000 1px 1px 1px;
 
-    }
+
+
     /*flex*/
     .container-flex {
         display: flex;
@@ -277,8 +273,58 @@ h3{
         align-content: center;
 
     }
+
     .item-flex {
         align-items: center;
     }
 
+    /*formulaire*/
+    form * {
+        display: block;
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+    form {
+        text-align: center;
+        background-color: #3c1801;
+        border: 2px solid var(--color2);
+        border-radius: 6px;
+        color: #f1f7ed;
+
+    }
+
+    label[for="Nom"] {
+        background-color: var(--color9);
+    }
+
+    label[for="Prenom"] {
+        background-color: var(--color8);
+    }
+
+    label[for="Email"] {
+        background-color: var(--color7);
+    }
+
+    label[for="Message"] {
+        background-color: var(--color6);
+    }
+
+    button[id="fermer"] {
+        font-size: 1.5rem;
+        background-color: var(--color3);
+        border: 2px solid var(--color2);
+        color: #f1f7ed;
+
+    }
+
+    button[type='submit'] {
+        font-size: 1.5rem;
+        background-color: var(--color3);
+        border: 2px solid var(--color2);
+        color: #f1f7ed;
+        border-radius: 4px;
+    }
 }

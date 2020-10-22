@@ -38,14 +38,15 @@ export function animation() {
         let itemGridDroite = document.querySelectorAll(".droite").item(val);
 
         let id = setInterval(()=>{//stage 2
-            if (inc>=100) {
+            let number = 200;
+            if (inc>=number) {
                 clearInterval(id);
             } else {
 
                 inc +=5;
                 //console.log("inc "+inc+" val "+val);
-                itemGridGauche.style.left = -(100-inc) + "%";
-                itemGridDroite.style.right = -(100-inc) + "%";
+                itemGridGauche.style.left = -(number-inc) + "%";
+                itemGridDroite.style.right = -(number-inc) + "%";
 
 
             }

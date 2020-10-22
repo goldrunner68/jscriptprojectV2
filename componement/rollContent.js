@@ -1,5 +1,5 @@
 
-export function defilement () {
+export function rollContent () {
     let image = 0  ;
 
     const data = '{"tableaux":['
@@ -13,15 +13,15 @@ export function defilement () {
         ']}';
 
 let obj = JSON.parse(data);/*convertion du string en objet*/
-let affichageDesProjets = document.querySelector("#defilement");
+let affichageDesProjets = document.querySelector("#roll-picture");
 affichageDesProjets.setAttribute('src', 'asset/images/travaux/'+ obj.tableaux[image].fichier);
-    document.querySelector('#texteDefilement').innerHTML = obj.tableaux[image].texte;
+    document.querySelector('#roll-text').innerHTML = obj.tableaux[image].texte;
 /*********************************************************************************************************/
-/* defilement des travaux */
+/* rollContent des travaux */
 setInterval(()=> {
     if (image <= 1) {
         affichageDesProjets.setAttribute('src', 'asset/images/travaux/'+ obj.tableaux[image].fichier);
-        document.querySelector('#texteDefilement').innerHTML = obj.tableaux[image].texte;
+        document.querySelector('#roll-text').innerHTML = obj.tableaux[image].texte;
         image++;
     } else {
         image = 0;
