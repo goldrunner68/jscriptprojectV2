@@ -19,7 +19,8 @@ affichageDesProjets.setAttribute('src', 'asset/images/travaux/'+ obj.tableaux[im
 /*********************************************************************************************************/
 /* rollContent des travaux */
 setInterval(()=> {
-    if (image <= 1) {
+
+    if (image <= obj.tableaux.length-1) {
         affichageDesProjets.setAttribute('src', 'asset/images/travaux/'+ obj.tableaux[image].fichier);
         document.querySelector('#roll-text').innerHTML = obj.tableaux[image].texte;
         image++;

@@ -18,8 +18,9 @@
         min-height: 100vh;
     }
     #section-b {
-        background: rgb(3,7,30);
-        background: linear-gradient(180deg, rgba(3,7,30,0.2) 0%, rgba(55,6,23,0.5) 66%, rgba(3,7,30,0.2) 100%);
+        background-image: url("../asset/background/triple_v05_02.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
         min-height: 100vh;
     }
 
@@ -37,6 +38,7 @@
         line-height: 7rem;
         font-size: 6rem;
         text-shadow: 2px 2px 2px #3c1801;
+
     }
 
     h1 > span {
@@ -86,10 +88,9 @@
 
 
     #leMenu {
-        right: -80%;
+        right: 200%;
         top: 25vh;
 
-        border-radius: 25px 0 0 25px;
 
     }
 
@@ -175,14 +176,14 @@
         align-items: center;
         overflow: hidden hidden;
         text-shadow: #000 1px 1px 1px;
-        padding: 18% 1%;
+        padding: 2% 2% 0 2%;
     }
     .contenaire-grid-1 {
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 2fr 2fr;
         /*background-color: rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(2px);*/
-
+        padding: 40% 2% 0 2%;
     }
 
     .contenaire-grid-2 {
@@ -193,6 +194,8 @@
         overflow-wrap: anywhere;
         text-align: justify;
         grid-column-gap: 0;
+        background: linear-gradient(180deg, rgba(3,7,30,0.2) 0%, rgba(55,6,23,0.5) 66%, rgba(3,7,30,0.2) 100%);
+
     }
 
     .contenaire-grid-3 {
@@ -233,7 +236,7 @@
         grid-row: 1/2;
         justify-self: stretch;
         align-self: stretch;
-        background-color: var(--color8);
+        background-color: var(--color7);
         border-radius: 6px 0 0 6px;
     }
 
@@ -292,6 +295,9 @@
         justify-content: space-around;
         align-content: center;
 
+    }
+    footer .container-flex{
+        justify-content: center;
     }
     /* imageMAX taille auto du contenaire*/
     .item-flex{
