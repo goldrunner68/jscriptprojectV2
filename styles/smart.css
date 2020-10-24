@@ -1,4 +1,4 @@
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait)and (min-width: 538px) {
     html {
         font-family: "Open Sans", "sans-serif";
         font-size: 18px;
@@ -57,9 +57,11 @@
     }
 
     h4 {
-        font-size: 2.8rem;
+        font-size: 4.5em;
     }
-
+        p{
+            font-size: 2rem;
+        }
 
     #burger {
         position: fixed
@@ -187,8 +189,8 @@
     }
 
     .contenaire-grid-2 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1.5fr 2fr;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 40% 60%;
         /*background-color: rgba(0, 0, 0, 0.15);
         backdrop-filter: blur(2px);*/
         overflow-wrap: anywhere;
@@ -241,13 +243,15 @@
     }
 
     #roll-text,#roll-picture{
-        padding: 6%;
+        padding: 16% 0;
         text-shadow: #000 2px 1px 1px;
         text-align: right;
+
     }
     #roll-picture{
         max-height: 100%;
         width: 100%;
+        padding: 16% 3%;
     }
     .item-grid-right-2 {
         grid-column: 2/3;
@@ -296,17 +300,18 @@
         align-content: center;
 
     }
+        .container-flex img{
+            height: 8rem;
+        }
     footer .container-flex{
         justify-content: center;
     }
     /* imageMAX taille auto du contenaire*/
     .item-flex{
+        align-items: center;
         margin: 1%;
-    }
-
-
-    .logo {
-
+        height: 100%;
+        width: auto;
     }
 
     /*formulaire*/

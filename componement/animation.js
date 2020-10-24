@@ -24,7 +24,7 @@ export function animation() {
         }
         if ((bool2 !== true && winScroll >= (maxHauteur / (2 / 3)) && winScroll >= maxHauteur)) {
             bool2 = true
-            scan(2);
+            //scan(2);
             scan(1);
             scan(0);
             clearInterval(id2);//oblige a sortir de l'interval pour plus securité
