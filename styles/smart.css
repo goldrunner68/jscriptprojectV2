@@ -13,21 +13,21 @@
     }
 
     #section-a {
-        background-image: url("../asset/background/triple_v05_01.jpg");
+        background-image: url("../asset/background/tripleV8_01.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
     }
 
     #section-b {
-        background-image: url("../asset/background/triple_v05_02.jpg");
+        background-image: url("../asset/background/tripleV8_02.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 100vh;
     }
 
     #section-c {
-        background-image: url("../asset/background/triple_v05_03.jpg");
+        background-image: url("../asset/background/tripleV8_03.jpg");
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -58,9 +58,13 @@
     }
 
     h4 {
-        font-size: 4.5em;
+        text-align: center;
+        background-color: var(--color2);
+        border: 2px solid var(--color1);
+        margin-top: 2%;
+        margin-bottom: 2%;
+        color: white;
     }
-
 
     #burger {
         position: fixed
@@ -187,16 +191,6 @@
         padding: 40% 2% 0 2%;
     }
 
-    .contenaire-grid-2 {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        /*background-color: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(2px);*/
-        overflow-wrap: anywhere;
-        grid-column-gap: 0;
-        background: linear-gradient(180deg, rgba(3, 7, 30, 0.2) 0%, rgba(55, 6, 23, 0.5) 66%, rgba(3, 7, 30, 0.2) 100%);
-
-    }
 
     .contenaire-grid-3 {
         grid-template-columns: 1fr;
@@ -227,49 +221,7 @@
         padding-top: 1rem;
     }
 
-    /*section b*/
-    .item-grid-top-2 {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: stretch;
-        align-self: stretch;
-        border-radius: 1rem;
-        background-color: var(--color7);
-        box-shadow: -2px -9px 19px 2px rgba(0,0,0,0.75);
 
-    }
-
-    .item-grid-bottom-2 {
-        grid-column: 1/2;
-        grid-row: 2/3;
-        align-self: center; /*axe haut bas*/
-
-        background-color: var(--color4);
-        border-radius:1rem;
-        box-shadow: -2px -9px 19px 2px rgba(0,0,0,0.75);
-    }
-
-    #roll-text, #roll-picture, iframe, p, h4 {
-        text-shadow: #000 1px 1px 1px;
-        text-align: justify;
-        font-size: 2rem;
-        padding: 1rem;
-
-    }
-    iframe{
-        border: 2px solid white;
-        border-radius: 2rem;
-        padding: 0;
-    }
-    #roll-picture{
-        height: 50vh;
-        border: 2px solid white;
-        border-radius: 2rem;
-        padding: 0;
-    }
-    #roll-text{
-        height: 18vh;
-    }
     /*section c*/
     .item-grid-gauche-3 {
         grid-column: 1/2;
@@ -288,7 +240,6 @@
     /*flex*/
     .container-flex {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-content: center;
 
@@ -302,6 +253,34 @@
         margin: 1%;
         max-height: 100%;
         max-width: 100%;
+    }
+
+    #section-b .container-flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5rem;
+    }
+
+    .flottant {
+        border: 2px solid var(--color2);
+        border-radius: 6px;
+        margin: 2%;
+        background-color: var(--color8);
+    }
+
+    .flottant  div {
+        margin-top: 2%;
+    }
+    .flottant p{
+        padding: 2%;
+    }
+    .flottant img {
+        height: 50%;
+        width: 50%;
+    }
+
+    .flottant iframe {
+        width: 100%;
     }
 
     footer .container-flex {
