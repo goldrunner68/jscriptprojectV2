@@ -5,10 +5,14 @@ export function rollContent () {
     const data = '{"tableaux":['
         +
         '{ "texte":"Résultat d un projet de groupe, l\'objectif était de réaliser selon ' +
-        'un cahier." , "fichier":"hbck.jpg" },'
+        'un cahier.' +
+        'Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu\'il est prêt ou que la mise en page est achevée.' +
+        ' Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum" , "fichier":"hbck.png" },'
         +
         '{ "texte":"Réalisation du site internet du restaurant BHV Mulhouse, ' +
-        '" , "fichier":"bhv2-samsung.png"} ' +
+        'Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu\'il est prêt ou que la mise en page est achevée.' +
+        ' Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum ' +
+        '" , "fichier":"bhv.png"} ' +
         ']}';
 
 let obj = JSON.parse(data);/*convertion du string en objet*/
