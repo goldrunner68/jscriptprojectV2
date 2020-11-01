@@ -7,8 +7,10 @@ import * as burger from "./componement/burgerMenu.js";
 burger.burgerMenu();
 
 //cacherItem.cacherItem();//cache les item avant onload;
+if (!window.matchMedia("(orientation: portrait)").matches){
+    animation.animation();//fait apparaitre les items apres onload;
+}
 
-animation.animation();//fait apparaitre les items apres onload;
 effet.effet(".logo");
 
 defilement.rollContent();

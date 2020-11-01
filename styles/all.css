@@ -1,33 +1,38 @@
-/*Taille div fond*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap'); /*Taille div fond*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,500;1,100&display=swap');
 :root {
 
     --color1: #03071E;
-    --color2:#370617;
-    --color3:#6A040F;
-    --color4:#9D0208;
-    --color5:#D00000;
+    --color2: #370617;
+    --color3: #6A040F;
+    --color4: #9D0208;
+    --color5: #D00000;
     --color6: #DC2F02;
-    --color7:#E85D04;
-    --color8:#F48C06;
-    --color9:#FAA307;
-    --color10:#FFBA08;
-
+    --color7: #E85D04;
+    --color8: #F48C06;
+    --color9: #FAA307;
+    --color10: #FFBA08;
+    --color11: #fcd29c;
+    --color12: #6e0c2f;
 }
-.color7{
-    color:var(--color7);
+
+.color7 {
+    color: var(--color7);
 }
 
 * {
-     text-decoration: none;
-     box-sizing: border-box;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
- }
+}
 nav {
-
     top: 0;
     left: 0
 }
-nav img,ul.topnav li a {
+
+nav img, ul.topnav li a {
     height: 132px;
     width: auto
 }
@@ -36,46 +41,256 @@ nav img,ul.topnav li a {
 #leMenu {
     position: fixed;
     z-index: 2;
-    background-color: rgba(255,255,255,.15);
+    background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 14px 0 rgba(0,0,0,.75);
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, .75);
     border-radius: 25px 0 0 25px;
 }
-
-
 /*****************************/
-.construction{
+.construction {
     background-color: var(--color10);
     color: var(--color4);
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
 }
-
-
-span.line-1{
+span.line-1 {
     display: block;
     height: 2px;
     width: 100%;
     background-color: var(--color7);
     margin: 1rem 0 1rem 0;
-
+}
+form * {
+    display: block;
+    width: 100%;
 }
 
-/*class animation slide*/
-.gauche {
-    position: relative;
-    left: -200%;
+footer ul, ul#leMenu {
+    list-style-type: none
 }
 
-.droite {
-    position: relative;
-    right: -200%;
-}
-footer .item-flex{
+footer .item-flex {
     max-width: 16rem;
 }
-footer p{
+footer p {
     text-align: center;
+}
+@media screen and (orientation: landscape)and (min-width: 539px) {
+    /*class animation slide*/
+    .isInvisibleLeft {
+        position: relative;
+        left: -200%;
+    }
+    .isInvisibleRight {
+        position: relative;
+        right: -200%;
+    }
+    /******/
+    html {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    #section-a {
+        background-image: url("../asset/background/tripleV8_01.png");
+        background-size: cover;
+        background-repeat: no-repeat no-repeat;
+        width: auto;
+        height: auto;
+
+    }
+
+    #section-b {
+        /*background-image: url("../asset/background/tripleV8_02.jpg");*/
+        /*background-size: contain;*/
+        /*background-repeat: no-repeat no-repeat;*/
+        background-color: white;
+        color: black;
+        height: 100vh;
+        padding: 6% 12%;
+        line-height: 1.75;
+
+    }
+
+    #section-c {
+        /* background-image: url("../asset/background/tripleV8_03.jpg");
+         background-size: contain;
+         background-repeat: no-repeat no-repeat;*/
+        background-color: white;
+        width: auto;
+        height: auto;
+        padding: 6% 20%;
+    }
+
+    #burger {
+        position: fixed
+    }
+
+    #burger {
+        z-index: 100;
+        top: 8px;
+        left: 8px;
+        height: 64px;
+        width: 64px;
+        background-color: #1b202b;
+        border: 5px solid #fff;
+        margin: 8px;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .75);
+        border-radius: 16px;
+    }
+
+    div#burger > span {
+        display: block;
+        height: 8px;
+        background-color: #f1f7ed;
+        border-radius: 2px;
+        margin: 8px 12px
+    }
+
+    #leMenu {
+        right: -25%;
+        top: 15vh;
+
+    }
+
+    #leMenu * {
+        width: 15vw;
+        height: auto;
+
+    }
+
+    ul#leMenu {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 2rem 0 0 2rem;
+    }
+
+    ul#leMenu li a {
+        display: block;
+        color: #f7fff7;
+        text-align: left;
+        font-size: 64px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #000;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (orientation: portrait)and (min-width: 538px) {
+    #burger {
+        position: fixed
+    }
+
+    #burger {
+        z-index: 100;
+        top: 2rem;
+        left: 2rem;
+        height: 128px;
+        width: 128px;
+        background-color: #1b202b;
+        border: 5px solid #fff;
+        margin: 8px;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .75);
+        border-radius: 32px;
+    }
+
+    div#burger > span {
+        display: block;
+        height: 8px;
+        background-color: #f1f7ed;
+        border-radius: 2px;
+        margin: 16px 24px
+    }
+    #leMenu {
+        right: 200%;
+        top: 25vh;
+    }
+    ul#leMenu {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 3rem;
+    }
+    ul#leMenu li {
+        top: 25vh;
+        left: 50%
+    }
+
+    ul#leMenu li a {
+        display: block;
+        color: #f7fff7;
+        text-align: left;
+        font-size: 64px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #000;
+        padding-left: 10%;
+        margin: 2% 0 0
+    }
+
+    /*****************************/
+    .topnav {
+        z-index: 2;
+        top: 25vh;
+        width: 100vw;
+        height: 100vw;
+        border: 1px solid #878b98;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, .15);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 14px 0 rgba(0, 0, 0, .75)
+    }
+
+    ul.topnav {
+        list-style-type: none;
+        overflow: hidden;
+        padding: 15% 0
+    }
+
+    ul.topnav li {
+        top: 25vh;
+        left: 50%
+    }
+
+    ul.topnav li a {
+        display: block;
+        color: #f7fff7;
+        text-align: left;
+        font-size: 64px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #000;
+        padding-left: 10%;
+        margin: 2% 0 0
+    }
+
+
+    /*class animation slide*/
+    .isInvisibleLeft {
+        position: relative;
+        left: 0;
+    }
+
+    .isInvisibleRight {
+        position: relative;
+        right: 0;
+    }
+
+    #section-a {
+        background-color: var(--color1);
+        width: auto;
+        height: auto;
+    }
+
+    #section-b {
+        background-color: var(--color1);
+        min-height: 100vh;
+    }
+
+    #section-c {
+
+        background-color: var(--color1);
+
+    }
+
 }
 
 /* */
