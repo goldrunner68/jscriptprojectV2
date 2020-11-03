@@ -4,7 +4,7 @@ let itemGridDroite;
 let gaucheOffside;// taille de l element complet
 let droiteOffside;// taille de l element complet
 
-function cacherItem() {
+function hiddenItem() {
 
         for (val;val<=2;val++){
         itemGridGauche = document.querySelectorAll(".item-grid-left")[val];
@@ -18,4 +18,4 @@ function cacherItem() {
 
 }
 
-export {cacherItem};
+export {hiddenItem};

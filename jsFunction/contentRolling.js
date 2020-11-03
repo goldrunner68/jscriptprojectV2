@@ -1,9 +1,9 @@
 
-export function rollContent () {
+export function contentRolling () {
     let image = 0  ;
 
     let data = '{"tableaux":['+
-        '{ "texte":"Résultat d un projet de groupe, l\'objectif était de réaliser selon un cahier." , "fichier":"hbck2.png" },' +
+        '{ "texte":"Résultat d un projet d\'étude de groupe, l\'objectif était de le réaliser selon un cahier des charges." , "fichier":"hbck2.png" },' +
         '{ "texte":"Réalisation du site internet du restaurant BHV Mulhouse." , "fichier":"bhv2.png"},' +
         '{ "texte":"Maquette d\'un portfolio d\'après un design vu sur Youtube." , "fichier":"portfolio.png"},' +
         '{ "texte":"Exemple d\'une maquette réalisé sous photoshop avec MokUp sous XD Adobe.", "fichier":"fitBooster.png"}]}';

@@ -16,10 +16,10 @@
     --color12: #6e0c2f;
 }
 
-.color7 {
-    color: var(--color7);
-}
 
+a:hover{background: rgba(0,0,0,.5);
+border-radius: 2rem;
+}
 * {
     text-decoration: none;
     box-sizing: border-box;
@@ -30,6 +30,12 @@
 nav {
     top: 0;
     left: 0
+}
+/* texte : Pour me contacter dans le form*/
+h3{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #03071E;
 }
 
 nav img, ul.topnav li a {
@@ -46,13 +52,16 @@ nav img, ul.topnav li a {
     box-shadow: 0 0 14px 0 rgba(0, 0, 0, .75);
     border-radius: 25px 0 0 25px;
 }
-/*****************************/
+
+/*texte avertissement du site en construction*/
 .construction {
     background-color: var(--color10);
     color: var(--color4);
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
 }
+
+/*ligne de separation*/
 span.line-1 {
     display: block;
     height: 2px;
@@ -60,6 +69,18 @@ span.line-1 {
     background-color: var(--color7);
     margin: 1rem 0 1rem 0;
 }
+/* js pour fermer le formulaire*/
+p[id="close"]{
+    text-align: center;
+    background-color: #000000;
+    color: #f1f7ed;
+}
+p[id="close"]:hover{
+    background-color: red;
+
+}
+
+
 form * {
     display: block;
     width: 100%;
@@ -86,49 +107,10 @@ footer p {
         right: -200%;
     }
     /******/
-    html {
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        color: #ffffff;
-        font-size: 16px;
-    }
-    #section-a {
-        background-image: url("../asset/background/tripleV8_01.png");
-        background-size: cover;
-        background-repeat: no-repeat no-repeat;
-        width: auto;
-        height: auto;
-
-    }
-
-    #section-b {
-        /*background-image: url("../asset/background/tripleV8_02.jpg");*/
-        /*background-size: contain;*/
-        /*background-repeat: no-repeat no-repeat;*/
-        background-color: white;
-        color: black;
-        height: 100vh;
-        padding: 6% 12%;
-        line-height: 1.75;
-
-    }
-
-    #section-c {
-        /* background-image: url("../asset/background/tripleV8_03.jpg");
-         background-size: contain;
-         background-repeat: no-repeat no-repeat;*/
-        background-color: white;
-        width: auto;
-        height: auto;
-        padding: 6% 20%;
-    }
-
-    #burger {
-        position: fixed
-    }
 
     #burger {
         z-index: 100;
+        position: fixed;
         top: 8px;
         left: 8px;
         height: 64px;
@@ -149,6 +131,7 @@ footer p {
     }
 
     #leMenu {
+
         right: -25%;
         top: 15vh;
 
@@ -157,7 +140,6 @@ footer p {
     #leMenu * {
         width: 15vw;
         height: auto;
-
     }
 
     ul#leMenu {
@@ -178,6 +160,17 @@ footer p {
 }
 
 @media screen and (orientation: portrait)and (min-width: 538px) {
+    /*class animation slide*/
+    .isInvisibleLeft {
+        position: relative;
+        left: 0;
+    }
+
+    .isInvisibleRight {
+        position: relative;
+        right: 0;
+    }
+
     #burger {
         position: fixed
     }
@@ -203,6 +196,7 @@ footer p {
         margin: 16px 24px
     }
     #leMenu {
+        z-index: 90;
         right: 200%;
         top: 25vh;
     }
@@ -262,34 +256,6 @@ footer p {
         margin: 2% 0 0
     }
 
-
-    /*class animation slide*/
-    .isInvisibleLeft {
-        position: relative;
-        left: 0;
-    }
-
-    .isInvisibleRight {
-        position: relative;
-        right: 0;
-    }
-
-    #section-a {
-        background-color: var(--color1);
-        width: auto;
-        height: auto;
-    }
-
-    #section-b {
-        background-color: var(--color1);
-        min-height: 100vh;
-    }
-
-    #section-c {
-
-        background-color: var(--color1);
-
-    }
 
 }
 
