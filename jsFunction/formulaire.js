@@ -10,10 +10,10 @@ export function formulaire(){
 
     document.querySelector('#boutonContact').addEventListener("click",()=>{
 
-        console.log('hello j ai clique sur contact');
+
         leMenu.style.right ='-80%';
         let el = document.querySelector('form');
-        el.style.top = "0";
+        el.style.top = "20%";
         el.style.left ="0";
         el.style.display ="block";
         el.style.zIndex = "80";

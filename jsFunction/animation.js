@@ -9,24 +9,24 @@ export function animation() {
     // detection du scanAllItem de la page web
 
     let id2 = setInterval(() => {
-        winScroll = window.scrollY;
-        maxHauteur = window.innerHeight;
+        winScroll = scrollY;
+        maxHauteur = innerHeight;
 
 
-        if ((bool0 !== true && winScroll >= -1 && winScroll <= (maxHauteur / 3))) {
+        if ((bool0 !== true && winScroll > -1 && winScroll <(maxHauteur / 3))) {
             bool0=true;
             scan(0);
         }
-        if ((bool1 !== true && winScroll >= (maxHauteur / 3.5) && winScroll <= (maxHauteur))) {
+        if ((bool1 !== true && winScroll > (maxHauteur / 3.5) && winScroll < (maxHauteur))) {
             scan(1);
 
             bool1=true
         }
-        if (( winScroll >= (maxHauteur / (2 / 3.5)) && winScroll >= maxHauteur)) {
+        if (( winScroll >(maxHauteur / (2 / 3.5)) && winScroll > maxHauteur)) {
             bool2 = true
             //scan(2);
             scan(0);
-
+            scan(1);
             clearInterval(id2);//oblige a sortir de l'interval pour plus securité
         }
     }, 0)
