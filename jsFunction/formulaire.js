@@ -12,7 +12,7 @@ export function formulaire(){
 
 
         leMenu.style.right ='-80%';
-        let el = document.querySelector('form');
+        let el = document.querySelector(".contact");
         el.style.top = "20%";
         el.style.left ="0";
         el.style.display ="block";
@@ -33,7 +33,7 @@ let id1 = setInterval(()=>{
 
 export function btnFermer (){
     document.querySelector('#close').addEventListener('click',()=>{
-        let el = document.querySelector('form');
+        let el = document.querySelector('.contact');
         el.style.display ="none";
 
     })
