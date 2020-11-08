@@ -1,5 +1,5 @@
 
-<section class="topPageGrid">
+<section class="sectionTopPage">
         <div class="itemlGridLeft isInvisibleLeft effet">
             <h1>
 Développeur Web Orienté Objet et Aplications mobiles.

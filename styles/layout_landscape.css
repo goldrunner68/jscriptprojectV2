@@ -1,0 +1,230 @@
+/*section a*/
+.sectionTopPage {
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-areas:
+        ". itemlGridLeft itemGridRight ."
+        ". itemGridBottom itemGridBottom .";
+    justify-items: center;
+    align-items: center;
+    background-image: url("../asset/background/tripleV9_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    width: auto;
+    height: auto;
+
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.75);
+}
+
+.itemlGridLeft {
+    grid-area: itemlGridLeft;
+    align-self: center; /*axe haut bas*/
+    /*justify-self: stretch;/*axe horiz*/
+    text-shadow: #000 1px 1px 1px;
+
+}
+
+.itemGridRight {
+    grid-area: itemGridRight;
+}
+
+.itemGridBottom {
+    grid-area: itemGridBottom;
+    justify-self: center; /*axe horiz*/
+    align-self: center;
+}
+
+/******section b *****/
+.sectionMiddlePage {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1.618fr 2.618fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "topLeft topRight"
+        "middleLeft middleRight"
+        "bottomLeft bottomRight";
+}
+
+.topLeft {
+    grid-area: topLeft;
+
+}
+
+.topLeft p{
+    font-size: 1rem;
+    font-weight:normal;
+
+
+}
+
+.middleRight {
+    grid-area: middleRight;
+    background: rgb(3,7,30);
+    /* background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(3,7,30,0.50) 50%, rgba(255,255,255,0) 100%);*/
+    border-radius: 1rem 0 0 1rem;
+}
+
+.middleLeft {
+    grid-area: middleLeft;
+}
+
+.bottomLeft {
+    grid-area: bottomLeft;
+    background: var(--color12);
+    /* background: linear-gradient(180deg, rgba(250,163,7,1) 0%, rgba(186,153,96,0.50) 50%, rgba(255,255,255,0) 100%);*/
+    border-radius: 0 1rem 1rem 0;
+}
+
+/******************************/
+.layoutCompetencesFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    /*background-image: url("../asset/background/tripleV8_02.jpg");*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat no-repeat;*/
+    line-height: 1.75;
+}
+
+.itemFlexCompetences:nth-child(2n+3){
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 1rem 1rem 0;
+
+}
+
+.itemFlexCompetences:nth-child(2n+2){
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 0 1rem 1rem 0;
+
+}
+.itemFlexCompetences:first-child{
+    margin-bottom: 1rem;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.itemFlexCompetences:last-child{
+    margin-top: 1rem;
+}
+
+
+
+/*le grid dans un contenaire flex
+    pour les competences*/
+.gridInLayoutCompetences {
+    display: grid;
+    grid-template-columns: 2.618fr 1.618fr;
+    grid-template-rows:auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+        "title-grid ."
+        "text-grid img-grid";
+    justify-items: start; /* axe horiz*/
+    text-align: left;
+    padding: 1rem 0 0 0 ;
+
+}
+
+.titleGrid {
+    grid-area: title-grid;
+    justify-self: stretch;
+    background-color: var(--color12);
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    padding: 1%;
+}
+
+.textGrid {
+    grid-area: text-grid;
+    align-self: center;
+    padding: 0 2rem;
+}
+
+.imgGrid {
+    grid-area: img-grid;
+    justify-self: center;
+    padding: 0 12%;
+
+}
+
+.bordureImg {
+    border: 2px solid rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+.formulaireGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.618fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    justify-items: stretch;
+    align-items: stretch;
+    /*background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);*/
+    font-size: 1.2rem;
+    text-align: left;
+    /* background-image: url("../asset/background/tripleV8_03.jpg");
+            background-size: contain;
+            background-repeat: no-repeat no-repeat;*/
+    background-color: blue;
+    width: auto;
+    height: auto;
+    padding: 6% 20%;
+}
+
+
+/***** les commentaires *****/
+.contenaireFlexCommentaires {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-top: 1rem;
+}
+
+.itemFlexCommentaires {
+    margin: 0 0 1% 0;
+    color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0 1rem 1rem 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.itemFlexCommentaires:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.itemFlexCommentaires:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.itemFlexCommentaires > div {
+    display: inline-block;
+    width: auto;
+    margin-right: 2rem;
+}
+
+/* footer */
+
+.containerFlexFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.containerFlexFooter > div {
+    height: 100%;
+    width: 10%;
+}
+

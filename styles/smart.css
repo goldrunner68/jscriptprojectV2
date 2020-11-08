@@ -1,359 +1,66 @@
+@import url("layout_smart.css") screen and (orientation: portrait)and (min-width: 538px);
+
 @media screen and (orientation: portrait)and (min-width: 538px) {
+
     html {
         font-family: 'Lato', sans-serif;
-        font-size: 18px;
-        color: black;
-        background-color: white;
-    }
-
-    h1 {
-        font-weight: lighter;
-        font-family: 'Limelight', sans-serif;
-        text-align: left;
-        line-height: 7rem;
-        font-size: 6rem;
-        text-shadow: 2px 2px 2px #3c1801;
         color: white;
+        font-size: 18px;
+        background: rgb(3,7,30);
+        background: radial-gradient(circle, rgba(3,7,30,1) 0%, rgba(3,7,30,0.50) 100%);
+
     }
-
-
-    h2 {
-        color: var(--color10);
-        font-weight: lighter;
-        text-align: justify-all;
-        font-size: 3rem;
+    p {
+        font-size: 2rem;
+        line-height: 1.175;
     }
-
     h4 {
-        font-weight: 500;
-        font-size: 3.5rem;
-        text-align: center;
-        color: #f1f7ed;
-        padding-top: 6%;
-    }
+        font-size: 2rem;
 
-    /*****************************/
-    p.construction {
-        display: inline;
-        color: #000;
-    }
-
-
-    img, iframe {
-        max-width: 100%;
-        max-height: 100%;
-
-    }
-    /*class animation slide*/
-    .isInvisibleLeft {
-        position: relative;
-        left: 0;
-    }
-
-    .isInvisibleRight {
-        position: relative;
-        right: 0;
     }
 
     #burger {
-        position: fixed
-    }
-
-    #burger {
-        z-index: 100;
-        top: 2rem;
-        left: 2rem;
-        height: 128px;
-        width: 128px;
-        background-color: #1b202b;
-        border: 5px solid #fff;
-        margin: 8px;
-        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .75);
-        border-radius: 32px;
-    }
-
-    div#burger > span {
-        display: block;
-        height: 8px;
-        background-color: #f1f7ed;
-        border-radius: 2px;
-        margin: 16px 24px
+        height: 5rem;
+        width: 5rem;
     }
     #leMenu {
-        z-index: 90;
-        right: 200%;
-        top: 25vh;
-    }
-    ul#leMenu {
-        list-style-type: none;
-        overflow: hidden;
-        padding: 3rem;
-    }
-    ul#leMenu li {
-        top: 25vh;
-        left: 50%
-    }
+        right: -30vh;
+        top: 15vh;
 
-    ul#leMenu li a {
-        display: block;
-        color: #f7fff7;
-        text-align: left;
-        font-size: 64px;
-        text-decoration: none;
-        text-shadow: 2px 2px 2px #000;
-        padding-left: 10%;
-        margin: 2% 0 0
     }
-
-    /*****************************/
-    .topnav {
-        z-index: 2;
-        top: 25vh;
-        width: 100vw;
-        height: 100vw;
-        border: 1px solid #878b98;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, .15);
-        backdrop-filter: blur(5px);
-        box-shadow: 0 0 14px 0 rgba(0, 0, 0, .75)
-    }
-
-    ul.topnav {
-        list-style-type: none;
-        overflow: hidden;
-        padding: 15% 0
-    }
-
-    ul.topnav li {
-        top: 25vh;
-        left: 50%
-    }
-
-    ul.topnav li a {
-        display: block;
-        color: #f7fff7;
-        text-align: left;
-        font-size: 64px;
-        text-decoration: none;
-        text-shadow: 2px 2px 2px #000;
-        padding-left: 10%;
-        margin: 2% 0 0
-    }
-
-
-    /* imageMAX taille auto du contenaire*/
-    .topPageGrid {
-        display: grid;
-        grid-template-columns:  1fr 2fr 2fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
-        grid-template-areas:
-        ". left right ."
-        ". bottom bottom .";
-        justify-items: center;
-        align-items: center;
-        padding-top: 20%;
-        background-image: url("../asset/background/v8_mobile.jpg");
-        background-size: cover;
-        background-repeat: no-repeat no-repeat;
-        width: auto;
+    #leMenu * {
+        width: 30vw;
         height: auto;
     }
-    /*section a*/
-    .itemlGridLeft {
-        grid-area: left;
-        align-self: center; /*axe haut bas*/
-        /*justify-self: stretch;/*axe horiz*/
-        text-shadow: #000 1px 1px 1px;
-    }
 
-    .itemGridRight {
-        grid-area: right;
-    }
+    input[type=checkbox] {
+    transform: scale(2);
 
-    .itemGridBottom {
-        grid-area: bottom;
-        justify-self: center; /*axe horiz*/
-        align-self: center;
-    }
-
-    #middlePageFlex {/* flex*/
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        min-height: 100vh;
-        margin: 0 8px;
-        font-size: 3rem;
-    }
-    .middlePageFlex p{
-        padding: 0 2%;
-    }
-    /*le grid dans un contenaire flex*/
-    .gridInFlex {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows:1fr 2fr 2.2fr;
-        grid-template-areas:
-        "title-grid"
-        " img-grid"
-        "text-grid";
-        text-align: justify;
-        padding-bottom: 2rem;
-        border-radius: 1rem;
-        border: 2px solid rgba(0,0,0,0.5);
-    }
-
-    .titleGrid {
-        grid-area: title-grid;
-        justify-self: center;
-        width: 100%;
-        height: 80%;
-        background-color: var(--color12);
-        border-radius: 1rem 1rem 0 0;
-    }
-
-    .textGrid {
-        grid-area: text-grid;
-        align-self: center;
+}
+    form{
+        background: rgb(3,7,30);
+        background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(3,7,30,0.87718837535014) 100%);
 
     }
-
-    .imgGrid {
-        grid-area: img-grid;
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .roll-picture{
-        width: 100%;
-        height: 100%;
-        padding: 0 1rem;
+    #form2 input[type=date],
+    #form2 label,
+    #form2 select {
+        display   : inline-block;
+        width     : 20%;
+       min-height: 3rem;
+        padding   : 2px 2px;
+        margin    : 2px 2px;
 
     }
-    .bordureImg{
-        border:5px var(--color1) ;
-        border-radius: 2rem;
-    }
-    .itemFlottantFlex:nth-child(even){
-        background-color:rgba(0,0,0,0.1);
-        border-radius: 1rem;
-        color: black;
-        margin-top: 1rem;
-    }
-    .itemFlottantFlex:nth-child(odd){
-        background-color:rgba(0,0,0,0.2);
-        border-radius: 1rem;
-        color: black;
-        margin-top:1rem;
-    }
-    .formulaireGrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.618fr;
-        grid-column-gap: 0;
-        grid-row-gap: 0;
-        justify-items: stretch;
-        align-items: stretch;
-        /*background-color: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(2px);*/
-        font-size: 3rem;
-        text-align: left;
-
-
-    }
-
-
-/* container pour les logo en Top et footer*/
-    .containerFlexFooter {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-
-    }
-
-    .item-flex > .logo {
-        max-height: 6rem;
-        max-width: 6rem;
-    }
-
-
-    footer .containerFlexFooter {
-        justify-content: center;
+    /* container pour les logo en Top et footer*/
+    footer {
+        border-top: 2px solid var(--color2);
         background-color: var(--color1);
         color: white;
-        margin-top: 2%;
     }
 
-    /*formulaire*/
-    .contact form {
-
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.15);
-       backdrop-filter: blur(2px);
-        border: 2px solid var(--color2);
-        border-radius: 6px;
-        color: #f1f7ed;
-        height: 100%;
-        width: 100%;
+    footer img {
+        max-height: 149px;
+        max-width: 149px;
     }
-    .contact form * {
-
-        display: block;
-        width: 100%;
-        font-weight: bolder;
-        text-align: left;
-        padding: 1rem 1rem;
-        font-size: 3rem;
-    }
-
-    .contact  form{
-        position: fixed;
-        transform: scale(0);
-        width: 100%;
-
-
-    }
-    .contact label[for="Nom"] {
-        background-color: var(--color9);
-    }
-
-    .contact label[for="Prenom"] {
-        background-color: var(--color8);
-    }
-
-    .contact label[for="Email"] {
-        background-color: var(--color7);
-    }
-
-    .contact label[for="Message"] {
-        background-color: var(--color6);
-    }
-
-    .contact  button[id="fermer"] {
-        font-size: 1.5rem;
-        background-color: var(--color3);
-        border: 2px solid var(--color2);
-        color: #f1f7ed;
-
-    }
-
-    .contact button[type='submit'] {
-        text-align: center;
-        font-size: 4rem;
-        background-color: var(--color3);
-        border: 2px solid var(--color2);
-        color: #f1f7ed;
-        border-radius: 4px;
-    }
-
-    .contact button:hover {
-        background-color: var(--color9);
-        border: 2px solid var(--color1);
-        color: #f1f7ed;
-
-    }
-
 }

@@ -1,5 +1,5 @@
-<div class="bottom">
-    <div class="itemFormAjoutCommentaires">
+<div class="bottomLeft">
+    <div >
         <form  action="#" method="post" enctype="multipart/form-data">
             <p class="alert"><?= $attention ?></p>
             <p class="alert"><?= $message ?></p>
@@ -9,7 +9,6 @@
             <input type="text" placeholder="Votre pseudo" name="pseudo" id="pseudo" required>
             <span class="avertis">Une note SVP</span>
             <div class="contenaireNbStars">
-
                 <div class="itemNotationDuFormulaire"><p>1</p>
                     <img class="starForm" src="asset/users/star.png">
                     <input type="checkbox" name="note1" unchecked value="1">
@@ -65,6 +64,5 @@
             </select>
             <input name="GO" type="submit" value="GO">
         </form>
-
     </div>
 </div>

@@ -1,0 +1,181 @@
+/*section a*/
+.sectionTopPage {
+    display: grid;
+    grid-template-columns:   3fr 1fr ;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-areas:
+        "itemlGridLeft itemGridRight"
+        "itemlGridLeft itemGridRight"
+        "itemGridBottom itemGridBottom ";
+    justify-items: center;
+    align-items: center;
+    background-image: url("../asset/background/tripleV9_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    width: auto;
+    height: 100vh;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.75);
+    padding: 0 2rem;
+}
+
+.itemlGridLeft {
+    grid-area: itemlGridLeft;
+    align-self: center; /*axe haut bas*/
+    /*justify-self: stretch;/*axe horiz*/
+    text-shadow: #000 1px 1px 1px;
+
+}
+
+.itemGridRight {
+    grid-area: itemGridRight;
+}
+
+.itemGridBottom {
+    grid-area: itemGridBottom;
+    justify-self: center; /*axe horiz*/
+    align-self: center;
+}
+
+/******section b *****/
+.sectionMiddlePage {
+    display: flex;
+    flex-direction: column;
+
+}
+.sectionMiddlePage>div{
+font-size: 3rem;
+}
+/******************************/
+.layoutCompetencesFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+    /*background-image: url("../asset/background/tripleV8_02.jpg");*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat no-repeat;*/
+    line-height: 1.75;
+    padding: 2%;
+
+}
+.itemFlexCompetences{
+    border-radius: 1rem;
+    height: 20vh;
+    border: 1px solid white;
+}
+.itemFlexCompetences:nth-child(2n+3){
+    background-color: rgba(0,0,0,0.4);
+}
+
+.itemFlexCompetences:nth-child(2n+2){
+    background-color: rgba(0,0,0,0.8);
+
+
+}
+.itemFlexCompetences:first-child{
+    margin-bottom: 1rem;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.itemFlexCompetences:last-child {
+    margin-TOP: 1rem;
+}
+
+
+
+/*le grid dans un contenaire flex
+    pour les competences*/
+.gridInLayoutCompetences {
+    display: grid;
+    grid-template-columns: 2.618fr 1.618fr;
+    grid-template-rows:1fr 3fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    grid-template-areas:
+        "title-grid title-grid"
+        "text-grid img-grid";
+    justify-items: start; /* axe horiz*/
+    text-align: left;
+    padding: 1rem 0 0 0 ;
+
+}
+
+.titleGrid {
+    grid-area: title-grid;
+    justify-self: stretch;
+    background-color: var(--color12);
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.textGrid {
+    grid-area: text-grid;
+    padding: 0 2rem;
+
+}
+
+.imgGrid {
+    grid-area: img-grid;
+   margin: 0 2rem;
+
+}
+
+.bordureImg {
+    border: 2px solid rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+/***** les commentaires *****/
+.contenaireFlexCommentaires {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding-top: 1rem;
+
+}
+
+.itemFlexCommentaires {
+    margin: 0 0 1% 0;
+    color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0 1rem 1rem 0;
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
+
+.itemFlexCommentaires:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.itemFlexCommentaires:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.itemFlexCommentaires > div {
+    display: inline-block;
+    width: auto;
+    margin-right: 2rem;
+
+}
+.bottomLeft *{/* pour le formulaire*/
+    font-size: 2rem;
+}
+/* footer */
+
+.itemNotationDuFormulaire{
+    width: 15%;
+
+}
+.containerFlexFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+}
+

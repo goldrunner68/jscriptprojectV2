@@ -1,7 +1,7 @@
-<div class="left">
-    <div class='middlePageFlex'>
-        <div class="itemFlottantFlex   isInvisibleLeft">
-            <div class="gridInFlex">
+<div class="middleLeft">
+    <div class='layoutCompetencesFlex'>
+        <div class="itemFlexCompetences   isInvisibleLeft">
+            <div class="gridInLayoutCompetences">
                 <div class="titleGrid ">
                     <h4>
                         Les réalisations.
@@ -12,12 +12,12 @@
                     </p>
                 </div>
                 <div class="imgGrid">
-                    <img id="roll-picture" class="roll-picture" alt="maquette, réalisation" src="">
+                    <img id="roll-picture" class="roll-picture bordureImg" alt="maquette, réalisation" src="">
                 </div>
             </div>
         </div>
-        <div class="itemFlottantFlex  isInvisibleRight">
-            <div class="gridInFlex">
+        <div class="itemFlexCompetences  isInvisibleRight">
+            <div class="gridInLayoutCompetences">
                 <div class="titleGrid">
                     <h4>
                         Une vidéo d'un projet en JavaFX.
@@ -35,8 +35,8 @@
                 </div>
             </div>
         </div>
-        <div class="itemFlottantFlex">
-            <div class="gridInFlex">
+        <div class="itemFlexCompetences">
+            <div class="gridInLayoutCompetences">
                 <div class="titleGrid">
                     <h4>
                         Bientôt d'autres projets !

@@ -2,7 +2,7 @@
 
 require_once './Controller/formulaire_verif.php'
 ?>
-<div class="top">
+<div class="middle_topLeft">
         <!--fin item formulaire-->
             <div class="contenaireFlexCommentaires">
                 <?php while ($donnees = $obj->fetch()) { ?>
