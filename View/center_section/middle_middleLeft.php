@@ -1,4 +1,4 @@
-<div class="middleLeft">
+<div class="middleLeft" >
     <div class='layoutCompetencesFlex'>
         <div class="itemFlexCompetences   isInvisibleLeft">
             <div class="gridInLayoutCompetences">
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-        <div class="itemFlexCompetences  isInvisibleRight">
+        <div class="itemFlexCompetences  isInvisibleLeft">
             <div class="gridInLayoutCompetences">
                 <div class="titleGrid">
                     <h4>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="itemFlexCompetences">
+        <div class="itemFlexCompetences isInvisibleLeft">
             <div class="gridInLayoutCompetences">
                 <div class="titleGrid">
                     <h4>

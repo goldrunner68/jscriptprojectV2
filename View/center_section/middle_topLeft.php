@@ -3,7 +3,6 @@
 require_once './Controller/formulaire_verif.php'
 ?>
 <div class="middle_topLeft">
-        <!--fin item formulaire-->
             <div class="contenaireFlexCommentaires">
                 <?php while ($donnees = $obj->fetch()) { ?>
                     <div class="itemFlexCommentaires">
@@ -28,8 +27,7 @@ require_once './Controller/formulaire_verif.php'
                     </div>
                 <?php } ?>
             </div>
-            <!--fin contenaire flex-->
         </div>
-        <!--fin item resultat-->
+
 
 

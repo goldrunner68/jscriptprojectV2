@@ -44,9 +44,7 @@
     flex-direction: column;
 
 }
-.sectionMiddlePage>div{
-font-size: 3rem;
-}
+
 /******************************/
 .layoutCompetencesFlex {
     display: flex;
@@ -133,8 +131,8 @@ font-size: 3rem;
 .contenaireFlexCommentaires {
     display: flex;
     flex-wrap: wrap;
-    overflow: auto;
     padding-top: 1rem;
+    overflow: scroll;
 
 }
 
@@ -162,9 +160,7 @@ font-size: 3rem;
     margin-right: 2rem;
 
 }
-.bottomLeft *{/* pour le formulaire*/
-    font-size: 2rem;
-}
+
 /* footer */
 
 .itemNotationDuFormulaire{

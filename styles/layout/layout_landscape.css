@@ -40,13 +40,16 @@
 /******section b *****/
 .sectionMiddlePage {
     display: grid;
-    grid-gap: 1rem;
+    grid-row-gap: 1rem;
     grid-template-columns: 1.618fr 2.618fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-        "topLeft topRight"
+        "topLeft middleRight"
         "middleLeft middleRight"
-        "bottomLeft bottomRight";
+        "bottomLeft middleRight";
+    background: rgb(3,7,30);
+    background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(3,7,30,0.50) 50%, rgba(255,255,255,0) 100%);
+
 }
 
 .topLeft {
@@ -55,27 +58,54 @@
 }
 
 .topLeft p{
-    font-size: 1rem;
     font-weight:normal;
-
-
 }
-
+.middle_topLeft{
+    border-radius: 0 1rem 1rem 0;
+    height: 100%;
+}
+.topRight {
+    grid-area: topRight;
+    margin-top: 1rem;
+     border-radius: 1rem 0 0 1rem;
+}
 .middleRight {
     grid-area: middleRight;
-    background: rgb(3,7,30);
-    /* background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(3,7,30,0.50) 50%, rgba(255,255,255,0) 100%);*/
     border-radius: 1rem 0 0 1rem;
+    margin: 1rem 0 0 1rem;
+    background-color: rgba(255,255,255,0.1);
 }
+/*sous grid in middleRight  */
+
+
+.middleRight {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "titreMiddle titreMiddle";
+align-content: start;
+}
+.titreMiddle{
+    grid-area: titreMiddle;
+    font-size: 8rem;
+    text-align: center;
+    align-self: start;
+}
+.middleRight > div {
+
+    padding: 1rem;
+    border: 1px solid red;
+}
+
 
 .middleLeft {
     grid-area: middleLeft;
+   border-radius: 0 1rem 1rem 0;
 }
 
 .bottomLeft {
     grid-area: bottomLeft;
-    background: var(--color12);
-    /* background: linear-gradient(180deg, rgba(250,163,7,1) 0%, rgba(186,153,96,0.50) 50%, rgba(255,255,255,0) 100%);*/
     border-radius: 0 1rem 1rem 0;
 }
 
@@ -83,14 +113,15 @@
 .layoutCompetencesFlex {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: stretch;
-    /*background-image: url("../asset/background/tripleV8_02.jpg");*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat no-repeat;*/
+justify-content: space-between;
+    align-content: space-between;
     line-height: 1.75;
-}
 
+}
+.itemFlexCompetences{
+margin: 1rem 0;
+    border-radius: 0 1rem 1rem 0;
+}
 .itemFlexCompetences:nth-child(2n+3){
     background-color: rgba(0,0,0,0.4);
     border-radius: 0 1rem 1rem 0;
@@ -103,13 +134,12 @@
 
 }
 .itemFlexCompetences:first-child{
-    margin-bottom: 1rem;
     background-color: rgba(0,0,0,0.4);
     border-radius: 0 1rem 1rem 0;
 }
 
 .itemFlexCompetences:last-child{
-    margin-top: 1rem;
+
 }
 
 
@@ -119,15 +149,14 @@
 .gridInLayoutCompetences {
     display: grid;
     grid-template-columns: 2.618fr 1.618fr;
-    grid-template-rows:auto auto;
-    grid-column-gap: 2rem;
+    grid-template-rows:1fr 3fr;
+    grid-column-gap: 0;
     grid-row-gap: 2rem;
     grid-template-areas:
-        "title-grid ."
+        "title-grid img-grid"
         "text-grid img-grid";
     justify-items: start; /* axe horiz*/
     text-align: left;
-    padding: 1rem 0 0 0 ;
 
 }
 
@@ -137,29 +166,26 @@
     background-color: var(--color12);
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
-    padding: 1%;
+   /* clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+*/
 }
 
 .textGrid {
     grid-area: text-grid;
     align-self: center;
-    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
 }
 
 .imgGrid {
     grid-area: img-grid;
     justify-self: center;
-    padding: 0 12%;
+    width: 100%;
+    height: 100%;
 
 }
 
-.bordureImg {
-    border: 2px solid rgba(0,0,0,0.1);
-    background-color: white;
-    border-radius: 1rem;
 
-}
 
 .formulaireGrid {
     display: grid;
@@ -169,13 +195,7 @@
     grid-row-gap: 0;
     justify-items: stretch;
     align-items: stretch;
-    /*background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(2px);*/
-    font-size: 1.2rem;
     text-align: left;
-    /* background-image: url("../asset/background/tripleV8_03.jpg");
-            background-size: contain;
-            background-repeat: no-repeat no-repeat;*/
     background-color: blue;
     width: auto;
     height: auto;
@@ -186,15 +206,16 @@
 /***** les commentaires *****/
 .contenaireFlexCommentaires {
     display: flex;
-    flex-wrap: wrap;
-    overflow: auto;
+    flex-direction: column;
     padding-top: 1rem;
+    justify-content: stretch;
 }
 
 .itemFlexCommentaires {
     margin: 0 0 1% 0;
     color: white;
     width: 100%;
+    height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0 1rem 1rem 0;
     background-color: rgba(0, 0, 0, 0.1);
