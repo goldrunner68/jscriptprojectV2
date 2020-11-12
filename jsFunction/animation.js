@@ -17,18 +17,16 @@ export function animation() {
             bool0=true;
             scan(0);
         }
-        if ((bool1 !== true && winScroll > (maxHauteur / 3.5) && winScroll < (maxHauteur))) {
-            scan(1);
-
-            bool1=true
-        }
-        if (( winScroll >(maxHauteur / (2 / 3.5)) && winScroll > maxHauteur)) {
-            bool2 = true
-            //scan(2);
+        if ((bool1 !== true && winScroll > (maxHauteur / 3) && winScroll < (maxHauteur))) {
             scan(0);
             scan(1);
+            scan(2);
+            scan(3);
+            bool0=true;
+            bool1=true
             clearInterval(id2);//oblige a sortir de l'interval pour plus securité
         }
+
     }, 0)
 
 
@@ -38,7 +36,7 @@ export function animation() {
         let inc = 0;
 
         let itemGridGauche = document.querySelectorAll(".isInvisibleLeft").item(val);
-        let itemGridDroite = document.querySelectorAll(".isInvisibleRight").item(val);
+        let itemGridDroite = document.querySelectorAll(".isInvisibleRight").item(0);
 
         let id = setInterval(()=>{//stage 2
             let number = 200;

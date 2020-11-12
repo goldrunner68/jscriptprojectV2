@@ -43,7 +43,7 @@ private $image;
      */
     public function setCommentaire($commentaire)
     {
-        $this->commentaire = strip_tags($commentaire);
+        $this->commentaire = stripslashes(strip_tags($commentaire));
     }
 
  /**

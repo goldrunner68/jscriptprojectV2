@@ -1,27 +1,47 @@
-@import url("layout_smart.css") screen and (orientation: portrait)and (min-width: 538px);
+@import url("layout/layout_smart.css") screen and (orientation: portrait)and (min-width: 538px);
 
 @media screen and (orientation: portrait)and (min-width: 538px) {
 
     html {
         font-family: 'Lato', sans-serif;
-        color: white;
-        font-size: 18px;
-        background: rgb(3,7,30);
-        background: radial-gradient(circle, rgba(3,7,30,1) 0%, rgba(3,7,30,0.50) 100%);
-
+        font-size: 24px;
     }
-    p {
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3{
         font-size: 2rem;
-        line-height: 1.175;
     }
     h4 {
         font-size: 2rem;
+    }
+    p {
+        line-height: 1.175;
+    }
+    .middleLeft p{
+        font-size: 1.5rem;
+    }
+    form *{
+        font-size: 1.5rem;
+    }
+    #leMenu {
+        right: -15vw;
+        top: 15vh;
 
     }
-
     #burger {
         height: 5rem;
         width: 5rem;
+    }
+    div#burger > span {
+        height: 1rem;
+        border-radius: 8px;
     }
     #leMenu {
         right: -30vh;
@@ -33,30 +53,14 @@
         height: auto;
     }
 
-    input[type=checkbox] {
-    transform: scale(2);
-
-}
-    form{
-        background: rgb(3,7,30);
-        background: linear-gradient(0deg, rgba(3,7,30,1) 0%, rgba(3,7,30,0.87718837535014) 100%);
-
-    }
     #form2 input[type=date],
     #form2 label,
     #form2 select {
         display   : inline-block;
         width     : 20%;
-       min-height: 3rem;
         padding   : 2px 2px;
         margin    : 2px 2px;
 
-    }
-    /* container pour les logo en Top et footer*/
-    footer {
-        border-top: 2px solid var(--color2);
-        background-color: var(--color1);
-        color: white;
     }
 
     footer img {

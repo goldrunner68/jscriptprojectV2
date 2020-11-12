@@ -8,6 +8,7 @@ include_once 'View/section/head.php';
 include_once 'View/section/navbar.php';
 include_once $views;
     echo'<script type="module" src="main.js"></script>';
+
 include_once 'View/section/footer.php';
     echo'</body>';
     echo'</html>';
@@ -23,6 +24,7 @@ include_once 'View/section/navbar.php';
 include_once $views;
 
 echo'<script type="module" src="main.js"></script>';
+
 include_once 'View/section/footer.php';
             echo'</body>';
             echo'</html>';

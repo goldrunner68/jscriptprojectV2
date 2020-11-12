@@ -25,7 +25,7 @@ if (file_exists($target_file)) {
 
 }
 // teste la taille
-if ($_FILES["imageAjout"]["size"] > 500000) {
+if ($_FILES["imageAjout"]["size"] > 30000) {
     $_SESSION['petitProb']="Desolé le poids de l'image est trop grande.";
     $uploadOk = 0;
 

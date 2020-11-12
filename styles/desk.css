@@ -1,4 +1,4 @@
-@import url("layout_landscape.css") screen and (orientation: landscape)and (min-width: 539px);
+@import url("layout/layout_landscape.css") screen and (orientation: landscape)and (min-width: 539px);
 
 @media screen and (orientation: landscape)and (min-width: 539px) {
 
@@ -6,16 +6,38 @@
     html {
         font-family: 'Lato', sans-serif;
         font-style: normal;
-        color: #ffffff;
-        background-color: var(--color2);
-        font-size: 16px;
+        font-size: 16px
     }
-    p {
-        font-size: 1rem;
+    #leMenu {
+        right: -20vw;
+        top: 15vh;
 
     }
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
     h4 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+
+    }
+    p {
+
+        line-height: 1.175;
+    }
+    .middleLeft p{
+        font-size: 1.5rem;
+    }
+    div#burger > span {
+        height: 0.5rem;
+        border-radius: 2px;
     }
     /*class animation slide*/
     .isInvisibleLeft {
@@ -27,14 +49,11 @@
         position: relative;
         right: -200%;
     }
+        .roll-picture{
 
+            border-radius: 0 1rem 1rem 0;
+        }
     /* container pour les logo en Top et footer*/
-    footer {
-        margin-top: 6%;
-        border-top: 2px solid var(--color2);
-        background-color: var(--color1);
-        color: white;
-    }
 
     footer img {
         max-height: 149px;
