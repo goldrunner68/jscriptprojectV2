@@ -155,19 +155,23 @@ button:hover {
 .middleRight ul{
     background-color: rgba(0,0,0,0.1);
 }
-.middleRight li:nth-child(even){
+.middleRight ul{
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(255,255,255,0.9);
 }
-.middleRight li:nth-child(odd){
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255,255,255,0.8);
+.item>ul>li:nth-child(even){
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.03125) 0%, rgba(232,93,4,0.1881127450980392) 100%);
+}
+.item>ul>li:nth-child(odd){
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.03125) 0%, rgba(232,93,4,255.1881127450980392) 100%);
 }
 .middleRight > div:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.1);
 }
 .middleRight > div:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -176,7 +180,7 @@ button:hover {
     background-color: rgba(0,0,0,0.2);
 }
 .itemFlexCompetences:nth-child(odd){
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.6);
 }
 
 

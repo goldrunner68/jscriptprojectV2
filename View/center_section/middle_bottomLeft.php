@@ -32,7 +32,7 @@
 
             </div>
             <label for="imageAjout">
-                <p>Taille de l'image 500ko max</p>
+                <p>Taille de l'image 30ko max</p>
             </label>
             <input type="file" name="imageAjout" required>
             <label for="commentaire">Commentaire</label>
@@ -41,7 +41,7 @@
             <input type="submit" value="Envoyez" required>
         </form>
 
-        <form id="form2" action="#" method="POST">
+       <!-- <form id="form2" action="#" method="POST">
             <label for="date">date debut :</label>
             <input type="date" name="date">
             <label for="date2">date fin :</label>
@@ -63,6 +63,6 @@
                 <option value="5">5</option>
             </select>
             <input name="GO" type="submit" value="GO">
-        </form>
+        </form>-->
     </div>
 </div>

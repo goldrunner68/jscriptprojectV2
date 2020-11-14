@@ -20,7 +20,7 @@
             <div class="gridInLayoutCompetences">
                 <div class="titleGrid">
                     <h4>
-                        Une vidéo d'un projet en JavaFX.
+                        Vidéo
                     </h4>
                 </div>
                 <div class="textGrid">
@@ -29,9 +29,8 @@
                     </p>
                 </div>
                 <div class="imgGrid ">
-                    <a href="https://www.youtube.com/embed/A4bBpntsjGY"><img src="asset/images/PacmanGif.gif"
-                                                                             class="roll-picture bordureImg"
-                                                                             alt="https://www.youtube.com/embed/A4bBpntsjGY"></a>
+                    <a href="https://www.youtube.com/embed/A4bBpntsjGY">
+                        <img src="asset/images/travaux/pacman.jpg" class="roll-picture bordureImg" alt="https://www.youtube.com/embed/A4bBpntsjGY"></a>
                 </div>
             </div>
         </div>

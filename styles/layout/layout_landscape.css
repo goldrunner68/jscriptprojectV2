@@ -13,8 +13,8 @@
     background-image: url("../../asset/background/tripleV9_01.jpg");
     background-size: cover;
     background-repeat: no-repeat no-repeat;
-    width: auto;
-    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
 
 }
 
@@ -81,7 +81,9 @@
     grid-template-areas:
     "titreMiddle";
     align-content: start;
+
 }
+
 .titreMiddle{
     grid-area: titreMiddle;
     font-size: 2rem;
@@ -89,7 +91,8 @@
     align-self: start;
 }
 .middleRight > div {
-    padding: 1rem;
+
+
 }
 
 

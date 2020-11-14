@@ -59,6 +59,9 @@
         max-height: 149px;
         max-width: 149px;
     }
+form{
+    border-radius: 0 1rem 1rem 0;
+}
 
 
 

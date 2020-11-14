@@ -1,60 +1,58 @@
+import * as competence from './competence.js';
 export function animation() {
 
     let winScroll;
     let maxHauteur;
-    let item = document.querySelectorAll(".isInvisibleLeft");
-    let bool0=false;
-    let bool1=false;
-    let bool2=false;
+
+    let bool0 = false;
+    let bool1 = false;
+
     // detection du scanAllItem de la page web
 
-    let id2 = setInterval(() => {
+    //************************************
+    let id1 = setInterval(()=>{
         winScroll = scrollY;
         maxHauteur = innerHeight;
+        let total = ( winScroll * 100 ) / maxHauteur;
+        console.log ( "scroll " + total );
 
-
-        if ((bool0 !== true && winScroll > -1 && winScroll <(maxHauteur / 3))) {
+        if ((bool0 !==true ) ) {
+            scan ( 0 );
             bool0=true;
-            scan(0);
+
         }
-        if ((bool1 !== true && winScroll > (maxHauteur / 3) && winScroll < (maxHauteur))) {
-            scan(0);
-            scan(1);
-            scan(2);
-            scan(3);
-            bool0=true;
-            bool1=true
-            clearInterval(id2);//oblige a sortir de l'interval pour plus securité
+        if ((bool1 !==true && total>125 && total <300 ) ) {
+            scan ( 1 );
+            scan ( 2 );
+            scan ( 3 );
+            competence.competence();
+            bool1=true;
+            clearInterval(id1);
         }
-
-    }, 0)
-
+    } ,0)
 
 
 
-    let scan = function scanAllItem(val=0) {//stage
+
+    let scan = function scanAllItem ( val = 0 ) {//stage
         let inc = 0;
-
-        let itemGridGauche = document.querySelectorAll(".isInvisibleLeft").item(val);
-        let itemGridDroite = document.querySelectorAll(".isInvisibleRight").item(0);
-
-        let id = setInterval(()=>{//stage 2
+        let lesItemsRight = document.querySelectorAll ( ".isInvisibleRight" )[0];
+        let lesItemsLeft = document.querySelectorAll ( ".isInvisibleLeft" )[val];
+        let id = setInterval ( () => {
             let number = 200;
-            if (inc>=number) {
-                clearInterval(id);
+            if ( inc >= number ) {
+                clearInterval ( id );
             } else {
 
-                inc +=5;
+                inc += 5;
                 //console.log("inc "+inc+" val "+val);
-                itemGridGauche.style.left = -(number-inc) + "%";
-                itemGridDroite.style.right = -(number-inc) + "%";
 
+                lesItemsLeft.style.left = - ( number - inc ) + "%";
+               lesItemsRight.style.right = -(number-inc) + "%";
 
             }
-        }, 10);
-
+        },10 );
 
     }
+
 }
-
-

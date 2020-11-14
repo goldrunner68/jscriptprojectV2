@@ -159,7 +159,6 @@ span.line-1 {
     display: block;
     height: 2px;
     width: 100%;
-    margin: 1rem 0 1rem 0;
 }
 .roll-picture{
     width: 100%;
@@ -174,10 +173,6 @@ span.line-1 {
 p[id="close"]{
     text-align: center;
 }
-.titreMiddle{
-    margin: 2rem 0;
-}
-
 
 .middleRight strong{
     display: block;
@@ -195,6 +190,7 @@ p[id="close"]{
     font-weight: bold;
     border-radius: 0 1rem 1rem 0;
     padding:0.5rem 1rem;
+    margin: 0.5rem 0;
 
 }
 .middleRight ul{
@@ -204,10 +200,6 @@ p[id="close"]{
     padding:0.5rem 1rem;
 }
 
-.middleRight >div{
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
 /*formulaire contact*/
 form * {
     display: block;
@@ -240,6 +232,14 @@ form * {
 button[type=submit] {
     border-radius: 4px;
 }
-
+textarea {
+    resize: none;
+}
+.item>ul>li{
+    background-color: var(--color1);
+    margin: 2px 0 2px 0 ;
+    border-radius: 0 2px 2px 0;
+    width: 0;
+}
 /* */
 

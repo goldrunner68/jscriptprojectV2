@@ -50,21 +50,18 @@
     line-height: 1.75;
 
 }
-
-.itemFlexCompetences:first-child{
-    margin-bottom: 1rem;
+.itemFlexCompetences{
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
-.itemFlexCompetences:last-child {
-    margin-TOP: 1rem;
-}
 
 /*le grid dans un contenaire flex
     pour les competences*/
 .gridInLayoutCompetences {
     display: grid;
     grid-template-columns: 2.618fr 1.618fr;
-    grid-template-rows:1fr 3fr;
+    grid-template-rows:1fr 2fr;
     grid-column-gap: 0;
     grid-row-gap: 2rem;
     grid-template-areas:
@@ -80,6 +77,7 @@
     justify-self: stretch;
     width: 100%;
     height: 100%;
+    border-radius: 1rem 0 0 0;
 }
 
 .textGrid {
@@ -87,6 +85,7 @@
     align-self: center;
     width: 100%;
     height: 100%;
+
 }
 
 .imgGrid {
@@ -94,11 +93,10 @@
     justify-self: center;
     width: 100%;
     height: 100%;
-
+    border-radius: 0 1rem 1rem 0;
 }
-
-.bordureImg {
-
+.roll-picture{
+    border-radius: 0 1rem 1rem 0;
 }
 
 /***** les commentaires *****/
@@ -138,3 +136,7 @@
     text-align: center;
 }
 
+.middleRight > div {
+    padding: 1rem 0 0 0 ;
+
+}

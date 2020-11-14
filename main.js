@@ -7,9 +7,9 @@ import * as burger from "./jsFunction/burgerMenu.js";
 burger.burgerMenu();
 formulaire.btnFermer()
 //hiddenItem.hiddenItem();//cache les item avant onload;
-if (!window.matchMedia("(orientation: portrait)").matches){
+
     animation.animation();//fait apparaitre les items apres onload;
-}
+
 formulaire.formulaire();
 effet.logoRotation(".logo");
 
